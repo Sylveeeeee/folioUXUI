@@ -42,9 +42,7 @@ export default function About() {
             </div>
           </div>
           <div className="mt-4 text-justify items-center text-base md:text-lg ">
-            Hello! I&apos;m Mack Jirawat, a student passionate about Front-End Development. 
-            I enjoy building responsive and user-friendly websites using tools like React, Tailwind CSS, and JavaScript. I also have experience working with REST APIs and integrating them into real projects.
-            I value clean UI, attention to detail, and am always eager to learn more through hands-on experience and teamwork.
+            Hello! I&apos;m Mack Jirawat, a passionate UX/UI Design student dedicated to creating intuitive, user-centered designs that enhance user satisfaction and engagement. With a strong foundation in design principles, user research, and prototyping tools, I aim to contribute to innovative digital products while collaborating with cross-functional teams to deliver seamless, impactful experiences.
           </div>
         </div>
       </div>

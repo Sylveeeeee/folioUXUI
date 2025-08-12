@@ -25,10 +25,10 @@ export default function Home() {
             Jirawat Tangdan
           </span>
           <div className="text-[#000000ad] text-xl sm:text-2xl md:text-[1.75rem] md:py-4 mb-2 md:mb-[10px]">
-            Front-end Developer
+            <span >UX/UI Designer</span>
           </div>
           <a
-            href="/resume.pdf"
+            href="/Resume_UXUI.pdf"
             download
             className="inline-block bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition"
           >

@@ -1,21 +1,15 @@
-import { IoLogoHtml5, IoLogoCss3, IoLogoNodejs, IoLogoPython } from "react-icons/io";
-import { IoLogoJavascript, IoLogoReact } from "react-icons/io5";
-import { BiLogoVuejs, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
-import { RiNextjsFill } from "react-icons/ri";
-import { FaRegCheckCircle } from "react-icons/fa";
+
+import { FaFigma, FaRegCheckCircle } from "react-icons/fa";
+import { SiMiro } from "react-icons/si";
 
 
 const skills = [
-  { icon: <IoLogoHtml5 />, label: "HTML",Ex:"Experienced"  },
-  { icon: <IoLogoCss3 />, label: "CSS",Ex:"Experienced" },
-  { icon: <IoLogoJavascript />, label: "Javascript", Ex:"Basic" },
-  { icon: <IoLogoNodejs />, label: "Nodejs" , Ex:"Intermediate" },
-  { icon: <IoLogoPython />, label: "Python" , Ex:"Basic" },
-  { icon: <IoLogoReact />, label: "React"   , Ex:"Intermediate" },
-  { icon: <BiLogoVuejs />, label: "Vuejs"   , Ex:"Basic" },
-  { icon: <BiLogoTailwindCss />, label: "TailwindCss"  , Ex:"Intermediate" },
-  { icon: <BiLogoTypescript />, label: "Typescript"    , Ex:"Basic" },
-  { icon: <RiNextjsFill />, label: "Nextjs"    , Ex:"Intermediate" },
+  { icon: <FaFigma />, label: "Figma", Ex: "Experienced" },
+  { icon: <SiMiro />, label: "Miro", Ex: "Experienced" },
+  { icon: <FaRegCheckCircle />, label: "User Research", Ex: "Experienced" },
+  { icon: <FaRegCheckCircle />, label: "Wireframing", Ex: "Experienced" },
+  { icon: <FaRegCheckCircle />, label: "Prototyping", Ex: "Intermediate" },
+  { icon: <FaRegCheckCircle />, label: "Usability Testing", Ex: "Intermediate" },
 ];
 
 export default function Experience() {
@@ -36,7 +30,7 @@ export default function Experience() {
                 className="flex flex-col items-center w-24 md:w-32"
               >
                 <div className="text-[40px] md:text-[50px] mb-2">{skill.icon}</div>
-                {/* <span className="text-base md:text-lg text-center">{skill.label}</span> */}
+                <span className="text-base md:text-lg text-center">{skill.label}</span>
                 <span className="text-sm md:text-base text-center flex  text-gray-500"><FaRegCheckCircle className="text-[20px] mr-2"/>{skill.Ex}</span>
               </div>
             ))}
