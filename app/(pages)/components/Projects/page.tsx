@@ -10,6 +10,11 @@ export default function Projects() {
   const projectOneImages = ["/coffee.png", "/coffee2.png", "/coffee3.png", "/coffee4.png"];
   const projectTwoImages = ["/shop.png", "/shop2.png", "/shop3.png"];
   const projectThreeImages = ["/plant1.png", "/plant2.png", "/plant3.png"];
+  const projectFourImages = ["/Reward Management.png", "/REWARD.png"];
+  const projectFiveImages = ["/ตรวจข้อสอบ.png", "/เส้นทางความก้าวหน้า-วิชาการ.png"];
+  const projectSixImages = ["/เอกสารขออนุมัติ.png", "/การอนุมัติเอกสาร.png", "/Group 49401.png"];
+
+
 
   const openModal = (images: string[]) => {
     setModalImages(images);
@@ -33,9 +38,9 @@ export default function Projects() {
       <div className="text-black text-3xl md:text-[2.5rem] font-semibold mb-4 text-center">
         Projects
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 w-full max-w-5xl">
+      <div className="flex flex-wrap flex-col md:flex-row justify-center items-stretch gap-8 w-full max-w-5xl ">
         {/* Project One */}
-        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6 w-full md:flex-1 bg-white min-h-[430px]">
+        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6  md:flex-1 bg-white min-h-[430px] min-w-[300px]">
           <ImageComponent
             className="rounded-xl mb-4 object-contain w-full h-[400px] md:h-[320px]"
             src="/coffee4.png"
@@ -44,7 +49,7 @@ export default function Projects() {
             height={300}
             onClick={() => openModal(projectOneImages)}
           />
-          <div className="text-black text-xl md:text-2xl font-bold py-2 text-center">
+          <div className="text-black text-xl md:text-2xl font-bold py-2 text-center ">
             Peedee Coffee roaster
           </div>
           <a
@@ -57,9 +62,9 @@ export default function Projects() {
           </a>
         </div>
         {/* Project Two */}
-        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6 w-full md:flex-1 bg-white min-h-[430px]">
+        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6 w-full md:flex-1 bg-white min-h-[430px] min-w-[300px]">
           <ImageComponent
-            className="rounded-xl mb-4 object-contain w-full h-[200px] md:h-[320px]"
+            className="rounded-xl mb-4 object-contain w-full h-[400px] md:h-[320px]"
             src="/shop3.png"
             alt="projecttwo"
             width={400}
@@ -89,9 +94,9 @@ export default function Projects() {
           </div>
         </div>
         {/* Project Three */}
-        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6 w-full md:flex-1 bg-white min-h-[430px]">
+        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6 w-full md:flex-1 bg-white min-h-[430px] min-w-[300px]">
           <ImageComponent
-            className="rounded-xl mb-4 object-contain w-full h-[200px] md:h-[320px]"
+            className="rounded-xl mb-4 object-contain w-full h-[400px] md:h-[320px]"
             src="/plant2.png"
             alt="projecttwo"
             width={400}
@@ -120,7 +125,80 @@ export default function Projects() {
             </a>
           </div>
         </div>
+        {/* Project Four */}
+        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6 w-full md:flex-1 bg-white min-h-[430px] min-w-[300px]">
+          <ImageComponent
+            className="rounded-xl mb-4 object-contain w-full h-[400px] md:h-[320px]"
+            src="/THUMBNAILS.png"
+            alt="THUMBNAILS"
+            width={400}
+            height={220}
+            onClick={() => openModal(projectFourImages)}
+          />
+          <div className="text-black text-xl md:text-2xl font-bold py-2 text-center">
+            GreenConnect
+          </div>
+          <div className="flex  items-center  gap-2 mt-2">
+            <a
+              className="hover:text-white text-base md:text-lg px-4 py-2 hover:bg-black text-black/60 border-2 border-black/40 rounded-full transition"
+              href="https://www.figma.com/design/g7FjQVxZtUipr07nMC2LKT/GreenConnect----%25E0%25B8%25A3%25E0%25B8%25B0%25E0%25B8%259A%25E0%25B8%259A%25E0%25B8%2588%25E0%25B8%25AD%25E0%25B8%2587%25E0%25B8%25AA%25E0%25B8%2599%25E0%25B8%25B2%25E0%25B8%25A1%25E0%25B8%2581%25E0%25B8%25AD%25E0%25B8%25A5%25E0%25B9%258C%25E0%25B8%259F?node-id=4080-29276&p=f&t=I2pZnnetNmh3Nyxe-0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              figma
+            </a>
+          </div>
+        </div>
+        {/* Project Five */}
+        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6 w-full md:flex-1 bg-white min-h-[430px] min-w-[300px]">
+          <ImageComponent
+            className="rounded-xl mb-4 object-contain w-full h-[400px] md:h-[320px]"
+            src="/UI - กรมเสมียนตรา-กระทรวงกลาโหม.png"
+            alt="UI - กรมเสมียนตรา-กระทรวงกลาโหม"
+            width={400}
+            height={220}
+            onClick={() => openModal(projectFiveImages)}
+          />
+          <div className="text-black text-xl md:text-2xl font-bold py-2 text-center">
+            UI - กรมเสมียนตรา-กระทรวงกลาโหม
+          </div>
+          <div className="flex  items-center  gap-2 mt-2">
+            <a
+              className="hover:text-white text-base md:text-lg px-4 py-2 hover:bg-black text-black/60 border-2 border-black/40 rounded-full transition"
+              href="https://www.figma.com/design/Nsj2BI4sfznEZAN4GGh3dX/UI---%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%25A1%25E0%25B9%2580%25E0%25B8%25AA%25E0%25B8%25A1%25E0%25B8%25B5%25E0%25B8%25A2%25E0%25B8%2599%25E0%25B8%2595%25E0%25B8%25A3%25E0%25B8%25B2-%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%25B0%25E0%25B8%2597%25E0%25B8%25A3%25E0%25B8%25A7%25E0%25B8%2587%25E0%25B8%2581%25E0%25B8%25A5%25E0%25B8%25B2%25E0%25B9%2582%25E0%25B8%25AB%25E0%25B8%25A1?node-id=2024-89228&t=gKzCZA25R8Hx3ny8-0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              figma
+            </a>
+          </div>
+        </div>
+        {/* Project Six */}
+        <div className="flex flex-col justify-center items-center border-2 border-black/40 rounded-[2rem] p-6 w-full md:flex-1 bg-white min-h-[430px] min-w-[300px]">
+          <ImageComponent
+            className="rounded-xl mb-4 object-contain w-full h-[400px] md:h-[320px]"
+            src="/MANA-Startbox.png"
+            alt="MANA-Startbox"
+            width={400}
+            height={220}
+            onClick={() => openModal(projectSixImages)}
+          />
+          <div className="text-black text-xl md:text-2xl font-bold py-2 text-center">
+            MANA-Startbox
+          </div>
+          <div className="flex  items-center  gap-2 mt-2">
+            <a
+              className="hover:text-white text-base md:text-lg px-4 py-2 hover:bg-black text-black/60 border-2 border-black/40 rounded-full transition"
+              href="https://www.figma.com/design/M4f4MWKaww4U7UwRToKjWi/STARTBOX-X-MANAWORK?node-id=1-2&t=AZNqyvweim8ONQim-0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              figma
+            </a>
+          </div>
+        </div>
       </div>
+
       {showModal && (
         <div
           className="fixed inset-0 bg-black/60 flex justify-center items-center z-50"
